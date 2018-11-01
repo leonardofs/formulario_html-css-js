@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Produtos</title>
+
+
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+
+<script type="text/javascript" src="script.js"></script>
+<link rel="stylesheet" type="text/css" href="view.css"> 
+
+</head>
+<body id="main_body" >
+		<nav class="navbar navbar-dark bg-primary">
+				<a class="navbar-brand" href="#"><h2>Produtos</h2></a>
+		</nav>
+	<div id="form_container">
+	
+		<form id="formulario" class="formulario"  method="post" action="" onsubmit="return send_alert()">
+			<div class="form_description">
+			<p>Trabalho avaliativo da disciplina de optativa: Programação Web</p>
+			</div>						
+			<ul>
+				
+				<li id="li_1" >
+					<label class="description" for="element_1">Nome do Produto </label>
+					<div>
+						<input id="element_1" name="element_1" class="element text medium" type="text" maxlength="255"  value="" required/> 
+					</div> 
+				</li>		
+				
+				<li id="li_2" >
+					<label class="description" for="element_2">Estoque </label>
+					<div>
+						<input id="element_2" name="element_2" class="element text medium" type="text" maxlength="255" onkeypress='return  OnlyNumbers(event)' value="" required/> 
+					</div> 
+				</li>		
+				
+				<li id="li_3" >
+					<label class="description" for="element_3">Preço (R$) </label>
+					<div>
+						<input id="element_3" name="element_3" class="element text currency" size="10" value="" onkeypress='return  OnlyNumbers(event)' type="text" required  />		
+					</div>
+				</li>
+				<li id="li_4">
+					<label class="description" for="element_4">Disponivel </label>
+						<input id="element_4" name="element_4" class="element" type="checkbox">
+				</li>
+				<li class="buttons">
+					<button type="button" class="btn btn-primary" type="submit" onclick="return send_alert()" >enviar</button>
+
+				</li>
+			</ul>
+			<div id="form_errors" class="alert alert-dark fade-in" role="alert" style="display:none">
+
+			
+		</form>	
+		
+		<div id="footer">
+			Aluno: Leonardo Flávio Santos 
+		</div>
+	</div>
+
+ <!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	
+	<script type="text/javascript" src="jquery-3.3.1.slim.min.js"></script>
+	<script type="text/javascript" src="popper.min.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+</body>
+</html>
